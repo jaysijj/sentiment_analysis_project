@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Sentiment Analysis</h1>
+    <textarea id="inputText" placeholder="Insira seu texto aqui"></textarea>
+    <div class="sentimentButtons">
+        <button onclick="analyzeSentiment()">Calcular Sentimento</button>
+    </div>
+
+        <p id="result"></p>
+
+    <script>
+        <!-- Dentro da função analyzeSentiment() no arquivo index.html -->
+
+        async function analyzeSentiment(modelType) {
+            const text = document.getElementById('inputText').value;
+        
+            // Verifica se o texto não está vazio antes de fazer a requisição
+            if (text.trim() === '') {
+                alert('Por favor, insira um texto antes de analisar o sentimento.');
+                return;
+            }
+        
+            try {
+                const response = await fetch(`http://127.0.0.1:8000/api/analyze_sentiment/?model=${modelType}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ text }),
+                });
+        
+                if (!response.ok) {
+                    throw new Error(`Erro na requisição: ${response.status}`);
+                }
+        
+                const result = await response.json();
+                document.getElementById('result').innerText = `Sentimento: ${result.sentiment}`;
+            } catch (error) {
+                console.error('Erro na requisição:', error.message);
+                document.getElementById('result').innerText = 'Erro ao analisar o sentimento.';
+            }
+        } 
+    </script>
+</body>
+</html>
