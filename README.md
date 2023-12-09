@@ -1,5 +1,7 @@
 # sentiment_analysis_project
 
+<img src="https://github.com/jaysijj/sentiment_analysis_project/assets/93339762/4b63d731-d9ae-47f6-96bb-9ea3d3d55804"/>
+
 # Aplicação Web de Análise de Sentimento
 Este código engloba componentes de frontend e backend para uma aplicação web de análise de sentimento. Vamos detalhar.
 
@@ -39,8 +41,9 @@ O resultado é retornado como JSON na resposta da API.
 - O JavaScript atualiza a página da web com o sentimento analisado.
 - Este código cria uma aplicação web simples de análise de sentimento, combinando componentes de frontend e backend para uma experiência do usuário integrada.
 
-
-
-
+<div align=center>
+  <img src="https://github.com/jaysijj/sentiment_analysis_project/assets/93339762/df18afb3-ab71-4f3e-8312-0996b53b2b10" width=500px/>
+  <img src="https://github.com/jaysijj/sentiment_analysis_project/assets/93339762/d4a4fdc5-49d1-4a28-a206-04e3d23e9d99" width=500px/>
+</div>
 
 
