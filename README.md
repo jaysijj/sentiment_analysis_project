@@ -40,10 +40,10 @@ O resultado é retornado como JSON na resposta da API.
 - O backend Django analisa o sentimento e retorna o resultado.
 - O JavaScript atualiza a página da web com o sentimento analisado.
 - Este código cria uma aplicação web simples de análise de sentimento, combinando componentes de frontend e backend para uma experiência do usuário integrada.
-
+<br>
 <div align=center>
-  <img src="https://github.com/jaysijj/sentiment_analysis_project/assets/93339762/df18afb3-ab71-4f3e-8312-0996b53b2b10" width=500px/>
-  <img src="https://github.com/jaysijj/sentiment_analysis_project/assets/93339762/d4a4fdc5-49d1-4a28-a206-04e3d23e9d99" width=500px/>
+  <img src="https://github.com/jaysijj/sentiment_analysis_project/assets/93339762/df18afb3-ab71-4f3e-8312-0996b53b2b10" width=900px/>
+  <img src="https://github.com/jaysijj/sentiment_analysis_project/assets/93339762/d4a4fdc5-49d1-4a28-a206-04e3d23e9d99" width=900px/>
 </div>
 
 
